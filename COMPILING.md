@@ -44,7 +44,10 @@ Next we need to compile.  Set ROSCONSOLE_SEVERITY_NONE, so we don't need to buil
       -DBoost_NO_SYSTEM_PATHS=ON \
       -DBOOST_ROOT=$(pwd)/install \
       -DBZIP2_INCLUDE_DIR=~/matbag_ws/install/include/ \
-      -DBZIP2_LIBRARIES=~/matbag_ws/install/lib/libbz2a
+      -DBZIP2_LIBRARIES=~/matbag_ws/install/lib/libbz2a \
+      -DBoost_INCLUDE_DIR=/usr/include \
+      -DBOOST_LIBRARYDIR=/usr/lib/x86_64-linux-gnu
+
 
 ### matlab_rosbag
 Now use the <tt>mex_compile.sh</tt> build script
